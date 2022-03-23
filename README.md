@@ -1,16 +1,35 @@
-# flutter_beike_ui_auto
+## 简介
+BKFlutterUITest是一款轻量级的Flutter UI自动化测试框架，提供页面元素识别、点击、文字输入等基础API，通过FlutterDriver可操作页面元素，并且BKFlutterUITest可快速集成到任意原生（Android&iOS）UI自动化框架中，为混合型或纯flutter UI自动化提供便捷的能力。
+详细原理可参考：https://mp.weixin.qq.com/s/htimPf_vt94i4Oz8H9_MQQ
 
-A new Flutter auto-test application.
+## 环境：
+python环境：python3
+XX：
 
-## Getting Started
+## 快速使用
+### python侧：
+安装依赖：pip install -r requirements.txt
+1、连接设备：
+    fd = fd.connect('ip')
+2、根据ID获取元素操作点击
+    fd.click_id_by_position(element_id='XXX', logtext='点击')
+3、根据ID直接点击
+    fd.click_id('XX')
+4、输入文字
+    fd.set_text('XXX', '123')
+5、断言
+    fd.assert_toast('保存成功')
+6、关闭
+    fd.__close__()
 
-This project is a starting point for a Flutter application.
+ 上层操作API在python/下，可独立与客户端的flutter侧建立链接。与在原生UI自动化框架混合，需要要保持FlutterDirver持续建立链接。
 
-A few resources to get you started if this is your first Flutter project:
+### dart侧：
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## 代码导读
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## 联系方式
+
+
+
