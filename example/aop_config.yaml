@@ -1,0 +1,3 @@
+flutter_tools_hook:
+  - project_name: 'beike_flutter_ui_auto'
+    exec_path: 'bin/starter.snapshot'
