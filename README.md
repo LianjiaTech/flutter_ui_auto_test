@@ -1,5 +1,5 @@
 （Android&iOS）UI自动化框架中，为混合型或纯flutter UI自动化提供便捷的能力。
-详细原理可参考：[Flutter UI测试自动化原理与实践](https://mp.weixin.qq.com/s/htimPf_vt94i4Oz8H9_MQQ)
+详细原理可参考：[Flutter UI测试自动化原理与实践](https://xie.infoq.cn/article/bef0313ec421079ebe718de90)
 
 ## 环境：
 python环境：python3<br>
