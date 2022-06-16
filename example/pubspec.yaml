@@ -23,8 +23,8 @@ dependencies:
     path: ../
   beike_aspectd:
     git:
-      url: http://gerrit.lianjia.com/mobile_resource/beike_aspectd
-      ref: tag_1.22.4.0.1
+      url: https://github.com/LianjiaTech/Beike_AspectD.git
+      ref: 2.2.2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
