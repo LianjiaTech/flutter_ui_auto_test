@@ -12,7 +12,7 @@ class Device():
     """ Device object """
 
     def __init__(self, ip):
-        self.u2_device = u2.connect('ip')
+        self.u2_device = u2.connect(ip)
         self.flutter_client = FlutterClient(ip, '4567')
         self.flutter_client.__set__(ip, '4567')
 
