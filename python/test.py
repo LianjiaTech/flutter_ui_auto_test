@@ -1,11 +1,12 @@
-from flutter_api import Device as fd
+from flutter_api import Device
 import uiautomator2 as u2
 
 if __name__ == '__main__':
-    # U2建立连接
-    d = u2.connect('ip')
+    # U2建立连接与初始化
+    fd = Device("ip")
+    d = fd.u2_device;
     # flutter建立连接
-    fd = fd.connect('ip')
+    fd.connect()
     # 启动APP
     d.app_start("app_package_name")
     # 点击原生页面元素跳转到flutter页面
